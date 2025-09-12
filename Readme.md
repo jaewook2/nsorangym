@@ -24,4 +24,19 @@ From the above projects, we copied and modified them for our objectives and publ
 - **ns-o-ran-gym**: [https://github.com/jaewook2/nsorangym_gym](https://github.com/jaewook2/nsorangym_gym)  
 
 
+## Installation
 
+You can install and run **nsorangym** in two ways:
+
+- **A. Using Docker (recommended)**
+- **B. Installing on the host machine**
+.### A. Using Docker (recommended)
+
+#### 1) Build the image
+```bash
+# Clone nsorangym (this repo)
+git clone https://github.com/jaewook2/nsorangym.git
+cd nsorangym
+
+# Build Docker image
+docker build -t nsorangym:latest .
