@@ -1,24 +1,27 @@
-This project is copied from A Gymnasium Environment for ns-O-RAN and the related projects are follows :
-- ns-o-ran projects
-    - e2sim :
-    - ns3-oram-mmwave :
-    - ns-o-ran : 
-- ns-o-ran-gym : https://github.com/wineslab/ns-o-ran-gym
+# nsorangym
 
-From the above projects, we copied and modified for our object to our github
-- e2im
-- ns3-oran-mmwave
-- ns-o-ran
-- ns-o-ran-gym
+## Introduction
+This project is carried out under the **parent project**  
+“Development of RAN Intelligent Controller for O-RAN Intelligence (RS-2023-00225468)”  
+and funded as a **sub-project entrusted by ETRI**, titled  
+*“Research on Intelligent Control Method for Energy Efficient 5G RAN”*.
 
-------------------------------------------------
-Installation and Build
-1. 그냥
-    - e2sim installiation
-    - ns3-oran-mmwave with ns-o-ran installiation
-    - ns3-gym installiation
-    - 
-2. Docker based
-    - Docker file 실행
+## Background
+This project is copied from **“A Gymnasium Environment for ns-O-RAN”**,  
+and has been modified based on the following software components:
+
+- **e2sim** ([link](https://github.com/wineslab/ns-o-ran-e2-sim))  
+- **ns3-oran-mmwave** ([link](https://github.com/wineslab/ns-o-ran-ns3-mmwave))  
+- **ns-o-ran** ([link](https://github.com/o-ran-sc/sim-ns3-o-ran-e2))  
+- **ns-o-ran-gym** ([link](https://github.com/wineslab/ns-o-ran-gym))  
+
+## Related Repositories
+From the above projects, we copied and modified them for our objectives and published them under our GitHub repositories:
+
+- **e2sim**: [https://github.com/jaewook2/nsorangym_e2sim](https://github.com/jaewook2/nsorangym_e2sim)  
+- **ns3-oran-mmwave**: [https://github.com/jaewook2/nsorangym_mmwave](https://github.com/jaewook2/nsorangym_mmwave)  
+- **ns-o-ran**: [https://github.com/jaewook2/nsorangym_nsoran](https://github.com/jaewook2/nsorangym_nsoran)  
+- **ns-o-ran-gym**: [https://github.com/jaewook2/nsorangym_gym](https://github.com/jaewook2/nsorangym_gym)  
+
 
 
