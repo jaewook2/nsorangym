@@ -30,7 +30,7 @@ You can install and run **nsorangym** in two ways:
 
 - **A. Using Docker (recommended)**
 - **B. Installing on the host machine**
-.### A. Using Docker (recommended)
+### A. Using Docker (recommended)
 
 #### 1) Build the image
 ```bash
