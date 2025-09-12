@@ -39,7 +39,7 @@ git clone https://github.com/jaewook2/nsorangym.git
 cd nsorangym
 
 # Build Docker image
-docker build -t nsorangym:latest
+docker build -t nsorangym:latest .
 ```
 #### 2) Run the container
 ```bash
