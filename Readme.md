@@ -39,4 +39,22 @@ git clone https://github.com/jaewook2/nsorangym.git
 cd nsorangym
 
 # Build Docker image
-docker build -t nsorangym:latest .
+docker build -t nsorangym:latest
+```
+#### 2) Run the container
+```bash
+# Basic run (CPU)
+docker run --rm -it \
+  --name nsorangym \
+  -v $PWD:/workspace/nsorangym \
+  nsorangym:latest /bin/bash
+
+## GPU (optional)
+docker run --rm -it \
+  --gpus all \
+  --name nsorangym \
+  -v $PWD:/workspace/nsorangym \
+  nsorangym:latest /bin/bash
+
+#Example RUN
+cd nsorangym_gym/
