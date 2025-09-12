@@ -58,3 +58,43 @@ docker run --rm -it \
 
 #Example RUN
 cd nsorangym_gym/
+```
+### B. Installing on the host machine
+#### 1) Install the Library for this project
+```bash
+apt-get update && apt-get install -y \
+    build-essential git cmake libsctp-dev autoconf automake libtool bison flex \
+    libboost-all-dev g++ python3 python3-pip python3-venv \
+    pkg-config libeigen3-dev sqlite3 \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
+pip install "numpy<2" hatch #--break-system-packages
+```
+#### 1) Install the e2sim
+```bash
+git clone https://github.com/jaewook2/nsorangym_e2sim oran_e2sim
+cd oran_e2sim/e2sim
+mkdir -p build
+./build_e2sim.sh 3
+cd ..
+```
+#### 2) Install and build the ns3-mmwave with nsoran
+```bash
+git clone https://github.com/jaewook2/nsorangym_mmwave ns3-mmwave-oran
+cd ns3-mmwave-oran/contrib
+git clone https://github.com/jaewook2/nsorangym_nsoran oran-interface
+cd ..  # go back to the ns-3-mmwave-oran folder
+./ns3 configure --enable-examples --enable-tests
+./ns3 build
+cd ..
+```
+#### 3) Install and build the ns-o-ran-gym
+```bash
+git clone https://github.com/jaewook2/nsorangym_gym nsorangym_gym
+cd nsorangym_gym
+hatch build
+pip install dist/*.tar.gz #--break-system-packages
+```
+
+
+
+
