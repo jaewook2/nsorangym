@@ -46,8 +46,9 @@ docker build -t nsorangym:latest .
 # Basic run (CPU)
 docker run --rm -it \
   --name nsorangym \
-  -v $PWD:/workspace/nsorangym \
-  nsorangym:latest /bin/bash
+    nsorangym:latest /bin/bash
+
+#-v $PWD:/workspace/nsorangym \
 
 ## GPU (optional)
 docker run --rm -it \
@@ -55,10 +56,13 @@ docker run --rm -it \
   --name nsorangym \
   -v $PWD:/workspace/nsorangym \
   nsorangym:latest /bin/bash
-
-#Example RUN
-cd nsorangym_gym/
 ```
+#Example RUN
+```bash
+cd /workspace/nsorangym_gym/example
+python3 traffic_steering.py
+```
+
 ### B. Installing on the host machine
 #### 1) Install the Library for this project
 ```bash
